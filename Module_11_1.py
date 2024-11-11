@@ -7,7 +7,7 @@ from matplotlib.transforms import Affine2D
 from PIL import Image, ImageFilter
 
 """
-Использование модуля matplotlib 
+Использование модуля matplotlib. 
 Визуализация данных с помощью инструментом из библиотеки.
 """
 SUCCESS_SYMBOLS = [
@@ -38,9 +38,10 @@ ax.set_ylabel("Y position [m]")
 
 plt.show()
 
-""" Использование модуля NumPy
-Создание массива чисел,необходимо выполнить математические операции 
-с массивом. Сложение поэлементно"""
+""" 
+Использование модуля NumPy.
+Сложение поэлементно.
+"""
 x = np.array([[1,10],[3,2]], dtype=np.float64)
 y = np.array([[7,6],[11,8]], dtype=np.float64)
 arr = np.array([3, 2])
@@ -54,9 +55,8 @@ print('C массивом другой размерности')
 print(x + arr)
 
 """
-Использование модуля requests.
-Получить данные о курсах валют с сайта на текущую дату и записать 
-полученные данные в переменную r в формате json.
+Использование модуля pillow.
+Наложение картинки на картинку.
 """
 filename_w = 'кот.jpg'
 with Image.open(filename_w) as img_w:
@@ -119,8 +119,3 @@ img_1.paste(
     w_mask.resize((w_mask.width // 1, w_mask.height // 1)), )
 
 img_1.show()
-
-
-
-
-
